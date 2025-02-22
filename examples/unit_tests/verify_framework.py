@@ -147,7 +147,7 @@ def test_browser_launcher(pytester):
                 assert "Data URL" in source
                 success = True  # No errors
             finally:
-                driver.quit()
+                a=3
             assert success
         """
     )
@@ -172,7 +172,7 @@ def test_framework_components(pytester):
                 js_utils.highlight_with_js(driver, "h1.top", 2, "")
                 success = True  # No errors
             finally:
-                driver.quit()
+                a=3
             assert success
         """
     )

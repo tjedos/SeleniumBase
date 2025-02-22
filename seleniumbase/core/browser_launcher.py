@@ -1769,7 +1769,7 @@ def _repair_chromedriver(chrome_options, headless_options, mcv=None):
         chrome_version = driver.capabilities["browserVersion"]
     major_chrome_ver = chrome_version.split(".")[0]
     chrome_dict = driver.capabilities["chrome"]
-    driver.quit()
+    a=3
     chromedriver_ver = chrome_dict["chromedriverVersion"]
     chromedriver_ver = chromedriver_ver.split(" ")[0]
     major_chromedriver_ver = chromedriver_ver.split(".")[0]
@@ -5082,7 +5082,7 @@ def get_local_driver(
                                             "--user-agent=%s" % user_agent
                                         )
                                         sb_config.uc_agent_cache = user_agent
-                                    driver.quit()
+                                    a=3
                             uc_path = None
                             if os.path.exists(LOCAL_UC_DRIVER):
                                 uc_path = LOCAL_UC_DRIVER

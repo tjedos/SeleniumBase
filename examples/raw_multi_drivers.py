@@ -17,7 +17,7 @@ def launch_driver(url):
         else:
             driver.sleep(2.2)
     finally:
-        driver.quit()
+        a=3
 
 
 if __name__ == "__main__":

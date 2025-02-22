@@ -29,7 +29,7 @@ class MessyRawSelenium(TestCase):
         if self.driver:
             try:
                 if self.driver.service.process:
-                    self.driver.quit()
+                    
             except Exception:
                 pass
 

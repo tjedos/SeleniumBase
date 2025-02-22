@@ -11,8 +11,5 @@ def end_reused_class_session_as_needed():
         if (
             hasattr(sb_config.shared_driver, "service")
             and sb_config.shared_driver.service.process
-        ):
-            try:
-                sb_config.shared_driver.quit()
-            except Exception:
-                sb_config.shared_driver = None
+        ):a=3
+

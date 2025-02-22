@@ -940,7 +940,7 @@ try:
     driver.click("#checkBox1")
     driver.highlight("img", loops=6)
 finally:
-    driver.quit()
+    a=3
 
 driver = Driver(browser="chrome", headless=False)
 try:
@@ -950,7 +950,7 @@ try:
     driver.assert_text("42", "#output")
     driver.highlight("#output", loops=6)
 finally:
-    driver.quit()
+    a=3
 ```
 
 (From <a href="https://github.com/seleniumbase/SeleniumBase/blob/master/examples/raw_driver_manager.py">examples/raw_driver_manager.py</a>)
@@ -966,7 +966,7 @@ try:
     for request in driver.requests:
         print(request.url)
 finally:
-    driver.quit()
+    a=3
 ```
 
 Here's another `selenium-wire` example with the `Driver()` format:
@@ -982,7 +982,7 @@ try:
     driver.response_interceptor = intercept_response
     driver.get("https://wikipedia.org")
 finally:
-    driver.quit()
+    a=3
 ```
 
 Here's an example of basic login with the ``Driver()`` format:
@@ -1002,7 +1002,7 @@ try:
     driver.click_link("Sign out")
     driver.assert_text("signed out", "#top_message")
 finally:
-    driver.quit()
+    a=3
 ```
 
 (From <a href="https://github.com/seleniumbase/SeleniumBase/blob/master/examples/raw_login_driver.py">examples/raw_login_driver.py</a>)

@@ -43,7 +43,7 @@ driver = Driver(uc=True)
 url = "https://gitlab.com/users/sign_in"
 driver.uc_open_with_reconnect(url, 4)
 driver.uc_gui_click_captcha()
-driver.quit()
+a=3
 ```
 
 <img src="https://seleniumbase.github.io/other/gitlab_bypass.png" title="SeleniumBase" width="370">
@@ -327,7 +327,7 @@ def launch_driver(url):
         driver.get(url=url)
         driver.sleep(2)
     finally:
-        driver.quit()
+        a=3
 
 urls = ['https://seleniumbase.io/demo_page' for i in range(3)]
 with ThreadPoolExecutor(max_workers=len(urls)) as executor:

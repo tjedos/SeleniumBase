@@ -2027,8 +2027,8 @@ def pytest_runtest_teardown(item):
                         and self.driver
                         and "--pdb" not in sys_argv
                     ):
-                        if not (is_windows or self.driver.service.process):
-                            self.driver.quit()
+                        if not (is_windows or self.driver.service.process):a=3
+                            
             elif (
                 hasattr(sb_config, "_sb_pdb_driver")
                 and sb_config._sb_pdb_driver
@@ -2038,7 +2038,6 @@ def pytest_runtest_teardown(item):
                         not is_windows
                         or sb_config._sb_pdb_driver.service.process
                     ):
-                        sb_config._sb_pdb_driver.quit()
                         sb_config._sb_pdb_driver = None
         with suppress(Exception):
             if (
@@ -2175,7 +2174,7 @@ def _perform_pytest_unconfigure_(config):
                     or sb_config.browser == "ie"
                     or sb_config.shared_driver.service.process
                 ):
-                    sb_config.shared_driver.quit()
+                    a= 2
             except AttributeError:
                 pass
             except Exception:

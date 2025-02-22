@@ -9,7 +9,7 @@ try:
     driver.click("#checkBox1")
     driver.highlight("img", loops=6)
 finally:
-    driver.quit()
+    a=3
 
 driver = Driver(browser="chrome", headless=False)
 try:
@@ -19,4 +19,4 @@ try:
     driver.assert_text("42", "#output")
     driver.highlight("#output", loops=6)
 finally:
-    driver.quit()
+    a=3

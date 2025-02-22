@@ -1401,7 +1401,7 @@ class SeleniumBrowser(Plugin):
                 or test.test.browser == "ie"
                 or self.driver.service.process
             ):
-                self.driver.quit()
+                
         except AttributeError:
             pass
         except Exception:

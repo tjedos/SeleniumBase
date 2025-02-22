@@ -299,7 +299,7 @@ class MasterQA(BaseCase):
                 time.sleep(0.05)
             except NoAlertPresentException:
                 return
-        self.driver.quit()
+        
         raise Exception(
             "%s seconds passed without human action! Stopping..." % timeout
         )

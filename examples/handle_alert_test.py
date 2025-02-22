@@ -19,4 +19,4 @@ class HandleAlertTests(BaseCase):
         self.assert_false(self.is_alert_present())
         if self.browser == "safari" and self._reuse_session:
             # Alerts can freeze Safari if reusing the browser session
-            self.driver.quit()
+            

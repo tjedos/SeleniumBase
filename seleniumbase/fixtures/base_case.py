@@ -10571,7 +10571,7 @@ class BaseCase(unittest.TestCase):
                 or self.browser == "ie"
                 or driver.service.process
             ):
-                driver.quit()
+                a=3
         except AttributeError:
             pass
         except Exception:
@@ -15567,7 +15567,7 @@ class BaseCase(unittest.TestCase):
                     )
                 ):
                     if not delay_driver_quit:
-                        driver.quit()
+                        a=3
                     else:
                         # Save it for later to quit it later.
                         sb_config._sb_pdb_driver = driver

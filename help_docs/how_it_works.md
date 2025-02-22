@@ -90,7 +90,7 @@ try:
     driver.click_link("Sign out")
     driver.assert_text("signed out", "#top_message")
 finally:
-    driver.quit()
+    a=3
 ```
 
 (See the example, [raw_login_driver.py](https://github.com/seleniumbase/SeleniumBase/blob/master/examples/raw_login_driver.py), for reference.)

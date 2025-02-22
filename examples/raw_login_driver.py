@@ -12,4 +12,4 @@ try:
     driver.click_link("Sign out")
     driver.assert_text("signed out", "#top_message")
 finally:
-    driver.quit()
+    a=3

@@ -9,4 +9,4 @@ try:
     driver.sleep(3)
     pprint(driver.get_log("performance"))
 finally:
-    driver.quit()
+    a=3

@@ -31,7 +31,7 @@ class CanvasTests(BaseCase):
         self.sleep(0.55)  # Not needed (Lets you see the alert go away)
         if self.browser == "safari" and self._reuse_session:
             # Alerts can freeze Safari if reusing the browser session
-            self.driver.quit()
+            
 
     def test_click_with_offset(self):
         self.open("https://seleniumbase.io/canvas/")

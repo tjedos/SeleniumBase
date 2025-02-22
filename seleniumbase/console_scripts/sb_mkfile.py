@@ -374,7 +374,6 @@ def main():
             data.append('    driver.highlight("p")  # selector')
             data.append("    driver.sleep(0.5)  # seconds")
         data.append("finally:")
-        data.append("    driver.quit()")
         data.append("")
         new_data = data
     else:

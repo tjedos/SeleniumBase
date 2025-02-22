@@ -57,7 +57,7 @@ class DriverContext():
                     or self.driver.service.process
                 )
             ):
-                self.driver.quit()
+                
         except Exception:
             pass
         return False

@@ -91,7 +91,7 @@ class MyTestClass(BaseCase):
                 "<mk-4>elem_2 = driver.find_element"
                 '("css selector", "#docsearch-input")\n\n'
                 'elem_2.send_keys("Python")</mk-4>\n\n'
-                "<mk-5>driver.quit()</mk-5>\n\n"
+                "<mk-5>a=3</mk-5>\n\n"
             ),
         )
         self.add_slide(

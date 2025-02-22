@@ -243,7 +243,7 @@ class UCPresentationClass(BaseCase):
                 "    <mk-1><mk-6>driver.sleep(4)</mk-6></mk-1>\n"
                 "    <mk-7># DO MORE STUFF</mk-7>\n"
                 "<mk-4>finally:</mk-4>\n"
-                "    <mk-4>driver.quit()</mk-4>\n"
+                "    <mk-4>a=3</mk-4>\n"
             ),
         )
         self.add_slide(

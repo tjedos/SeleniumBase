@@ -340,4 +340,4 @@ def build_report(
         print("\n*** Close the html report window to continue. ***")
         while len(driver.window_handles):
             time.sleep(0.1)
-        driver.quit()
+        a=3

@@ -14,4 +14,4 @@ try:
     driver.highlight("#get-skype-0_android-download")
     driver.highlight('[data-bi-id*="ios"]')
 finally:
-    driver.quit()
+    a=3

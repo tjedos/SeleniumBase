@@ -1255,8 +1255,7 @@ def _perform_behave_unconfigure_():
                     not is_windows
                     or sb_config.browser == "ie"
                     or sb_config.shared_driver.service.process
-                ):
-                    sb_config.shared_driver.quit()
+                ):a=3
             except AttributeError:
                 pass
             except Exception:
@@ -1332,8 +1331,7 @@ def do_final_driver_cleanup_as_needed():
                 not is_windows
                 or sb_config.browser == "ie"
                 or sb_config.last_driver.service.process
-            ):
-                sb_config.last_driver.quit()
+            ):a=3
 
 
 def _perform_behave_terminal_summary_():

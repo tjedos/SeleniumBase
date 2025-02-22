@@ -8,7 +8,7 @@ if __name__ == "__main__":
 class EdgePresentationClass(BaseCase):
     def test_presentation(self):
         if not self.browser == "edge":
-            self.driver.quit()
+            
             self.get_new_driver(browser="edge")
         self.demo_mode = False
         self.maximize_window()
@@ -260,7 +260,7 @@ class EdgePresentationClass(BaseCase):
                 "<mk-4>elem_2 = driver.find_element"
                 '("css selector", "#docsearch-input")\n\n'
                 'elem_2.send_keys("Python")</mk-4>\n\n'
-                "<mk-5>driver.quit()</mk-5>\n\n"
+                "<mk-5>a=3</mk-5>\n\n"
             ),
         )
         self.add_slide(
